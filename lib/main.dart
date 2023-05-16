@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:yemek_tarifleri/screen/categories.dart';
+import 'package:yemek_tarifleri/screens/categories.dart';
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -23,7 +23,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      home: const categoriesScreen(),
+      home: const CategoriesScreen(
+          //title: 'kattegorrilerr..',
+          //meals: CategoriesScreen,
+          ),
     );
   }
 }
